@@ -12,7 +12,7 @@ from jose import jwt, JWTError
 from starlette.requests import Request
 
 # from db import get_db
-from services import get_admin_by_username, get_auth_admin
+from utils import get_admin_by_username, get_auth_admin
 # from models import Admin
 from config import *
 
