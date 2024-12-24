@@ -1,10 +1,9 @@
 from models import BaseModel
-
 from sqlalchemy import Column, Integer, String
 
 
 class User(BaseModel):
-    __tablename__ = 'users'
+    __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
 
@@ -13,4 +12,3 @@ class User(BaseModel):
 
     def __str__(self):
         return self.username
-    
