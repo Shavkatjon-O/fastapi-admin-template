@@ -12,11 +12,10 @@ from jose import jwt, JWTError
 from starlette.requests import Request
 
 # from db import get_db
-from utils import get_admin_by_username, get_auth_admin
+from services.admins import get_admin_by_username, get_auth_admin
 # from models import Admin
 from config import *
-
-from schemas import TokenData
+from schemas.token import TokenData
 
 
 AUTH_KEY = os.environ.get("APPLICATION_API_KEY", "1")

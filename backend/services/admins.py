@@ -1,8 +1,8 @@
 from typing import Union, Type
 from fastapi import Depends
 from sqlalchemy.orm import Session
-from db import get_db
-from auth.jwt import verify_password
+from database import get_db
+from jwt import verify_password
 from models import Admin
 
 
